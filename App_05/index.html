@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title>Demo Angular App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-messages/1.4.8/angular-messages.min.js"></script>
+    
+ <!--Jasmine For Unit Testing Start--> 
+    
+<!--    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/jasmine-html.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jasmine/2.3.3/boot.min.js"></script>
+    <script src="node_modules/angular-mocks/angular-mocks.js"></script>-->
+ 
+<!--Jasmine For Unit Testing End-->    
+    
+    
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css" />
+
+    <script type="text/javascript" src="jquery/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/style.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="directives/directives.js"></script>
+    <script type="text/javascript" src="config/routes.js"></script>
+    <script type="text/javascript" src="controllers/controllers.js"></script>
+    <script type="text/javascript" src="factories/factories.js"></script>
+    <script type="text/javascript" src="filters/filter.js"></script>
+    <script type="text/javascript" src="validations/validations.js"></script>
+    
+    <!--Unit Testing Script Start-->
+   <!-- <script type="text/javascript" src="test/filter.js"></script>-->
+    <!--Unit Testing Script End-->
+        
+  
+</head>
+<body>
+
+<div class="container">
+
+<div class="page-header">
+    <ul id="menu">
+    <li><a ui-sref="signin">Sign In</a></li>
+    <li><a ui-sref="signup">Sign Up</a></li>
+    <li><a href="#">Home</a></li>
+</ul> 
+</div>
+
+<!-- Registration form - START -->
+<div class="container">
+    <ui-view></ui-view>
+</div>
+<!-- Registration form - END -->
+
+</div>
+
+</body>
+</html>
